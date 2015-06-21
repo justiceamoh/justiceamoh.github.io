@@ -1,5 +1,5 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
+name: Blistering Barnacles
+description: Research Blogging.
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
 aboutPage: true
@@ -9,14 +9,16 @@ highlighter: pygments
 
 paginate: 20
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://justiceamoh.me'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus_shortname: 'your-disqus-shortname'
+email: justice.amoh.jr.th@dartmouth.edu
+
 
 # Details for the RSS feed generator
 url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+author:         'Justice Amoh'
+authorTwitter:  'justiceamoh'
 
 permalink:       /:year/:title/
 
