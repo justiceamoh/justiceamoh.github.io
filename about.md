@@ -23,3 +23,6 @@ MyRuns: An activity tracking android app that automatically determines what acti
 
 TinySearchEngine: A small yet complete internet search engine comprising of a crawler, an indexer, and a query engine. Implemented as a class project.
 
+------
+[G+](https://plus.google.com/+JusticeAmoh) 
+[LinkedIn](www.linkedin.com/pub/justice-amoh/18/934/2a/)
