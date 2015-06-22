@@ -4,7 +4,7 @@ date:   2015-01-04 10:18:00
 description: A First-Pass Cough Detection Block
 ---
 
-Approaches: 
+## Approaches 
 \- *Statistical Tests*: the idea here is to capture the salient feature of the cough waveform by looking at the ratios of novel peaks and dips in the signal. We could have fixed divisions which correspond to distinct portions of the cough waveform. Then a hypothesis test can be performed on these ratios (maybe F-test?) to obtain some p-value (probability of the data being cough).
 
 \- *Optimization*: the idea here is to model the data by some function, then use the training examples/data to optimize the parameters of this function. This will yield a minimum or best-fit curve (template) for all the training cough waveforms. With this template, we can do a cross-correlation with incoming signals to determine if there are similar at all.
@@ -17,7 +17,7 @@ I have been following this URL to get a good understanding of one class SVM in g
 
 [link](http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/)
 
-Separability In Data
+## Separability In Data
 Before moving forward with the SVDD, I have to answer these question: how best can I transform my data(envelope-derivative) into an appropriate training data? What are the features to use? I had two options:
 
 1\. Two Features - Time fraction & Envelope sample point: Here, I would take samples from the envelope of all training data, together with their time stamp(fraction of event duration), and use as two features for my training. This basically makes a 2D representation of the data (time, amplitude) just as our eyes see the waveform in reality. A concern here is that we might be losing some information on the sequential aspects of the data...the transitions between samples are not captured. 
@@ -48,7 +48,7 @@ wn = 2*pi*fc;
 lpf = tf(B,A);
 lpf2 = tf(C,D);
 
-**==SVDD Results==**
+## SVDD Results
 
 I went ahead and trained a few Support Vector Data Descriptions for the two feature case. For some reason, it was very difficult to get the svdd boundaries to capture the 'template'. It kept generating an ellipsoid decision boundary plane irrespective of whatever kernel i used be it RBF, polynomial or even exponential.
 <en-media type="image/png" hash="17e8ce33fe0ee264b0dc03edeb32ef28"/>
@@ -105,12 +105,11 @@ In short, i think we should only use the posterior of one component; the peak co
 
 The SVDD Performance looks fairly good. I have to run a full test and get actual values but on a single event, the confusion matrix looked like:
 
-True | Estimated Labels
-Labels   | outlie | target | Totals
-\--------|-----------------|-------
-target   |  27    |  365   | 392
-\--------|-----------------|-------
-Totals   |                 | 392
+
+Labels	| outlier | target | Totals
+--------|:-------:|:------:|-------
+target  |   27    |   365  | 392  
+
 
 And the boundaries on the plot looks like: 
 
