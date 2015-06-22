@@ -2,7 +2,7 @@
 title:  "Deep Neural Networks In Cough Detection"
 date:   2015-06-15 10:18:00
 description: A First-Pass Cough Detection Block
-published: false
+published: true
 ---
 
 # DNN - Application Notes
