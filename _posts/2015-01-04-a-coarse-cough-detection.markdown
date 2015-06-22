@@ -1,7 +1,8 @@
 ---
-title:
+title:  "A Coarse Cough Detection"
 date:   2015-01-04 10:18:00
 description: A First-Pass Cough Detection Block
+published: false
 ---
 
 ## Approaches 
