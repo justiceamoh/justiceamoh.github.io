@@ -1,28 +1,30 @@
 ---
+layout: page
 title: About
-permalink: about/
-profile: true
 ---
 
-Hey there! 
+<p class="message">
+  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+</p>
 
-I am Justice Amoh, a PhD candidate of the [Thayer School](http://thayer.dartmouth.edu/) at [Dartmouth College](http://dartmouth.edu/). My research interests are machine learning, artificial intelligence, signal processing and embedded systems. 
+In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
+There are currently two themes built on Poole:
 
+* [Hyde](http://hyde.getpoole.com)
+* [Lanyon](http://lanyon.getpoole.com)
 
-### Projects
-Acoustic Health Sensors: Circuitry and machine learning algorithms for analyzing respiratory acoustics for detection and characterization of Asthma or COPD symptoms. 
+Learn more and contribute on [GitHub](https://github.com/poole).
 
-BioImpedance: An embedded system extending a single chip  biopolar impedance analyzer IC to a tetrapolar device for applications in analyzing cancerous tissues during prostate biopsies.  
+## Setup
 
-MHB: Methodist Hymn Book Android app for the Methodist Church, Ghana. An collation and indexing of all hymns, creeds, and service routines as available in the physical methodist hymn book used in all methodist churches in Ghana. Contributors: @andrewquartey, @edemsco.
+Some fun facts about the setup of this project include:
 
-Timely: An android app for Dartmouth students that anticipates what information user's need at any particular point in time, and delivers it to them in a Google-Now-cards kinda approach. Information includes current meal options at dining halls, events in buildings user might be in close proximity with, and so on. Collaborators: @deloschang, @talwai, @robinwang08
+* Built for [Jekyll](http://jekyllrb.com)
+* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
+* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
+* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
 
-MyRuns: An activity tracking android app that automatically determines what activity user is engaged in, the duration of the activity and the amount of calories burned in that period. Also maps out the path taken on a google map.
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
-TinySearchEngine: A small yet complete internet search engine comprising of a crawler, an indexer, and a query engine. Implemented as a class project.
-
-------
-[G+](https://plus.google.com/+JusticeAmoh) 
-[LinkedIn](www.linkedin.com/pub/justice-amoh/18/934/2a/)
+Thanks for reading!
