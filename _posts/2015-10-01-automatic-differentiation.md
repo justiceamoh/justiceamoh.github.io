@@ -28,7 +28,7 @@ AD is a set of techniques to numerically evaluate derivative:
 - express functions as sequence of elementary arithmetic operations (+,-,×)
 - apply **chain rule** repeatedly to these operations
 
-![formula](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20y%7D%7B%5Cpartial%20x%7D%3D%5Cfrac%7B%5Cpartial%20y%7D%7B%5Cpartial%20w%7D%5Ctimes%20%5Cfrac%7B%5Cpartial%20w%7D%7B%5Cpartial%20x%7D "\\frac{\\partial y}{\\partial x}=\\frac{\\partial y}{\\partial w}\\times \\frac{\\partial w}{\\partial x}")
+$$\frac{\partial y}{\partial x} = \frac{\partial y}{\partial w} \times \frac{\partial w}{\partial x}  $$
 
 Other names/variants: 
 - Algorithmic/Computational Differentiation
@@ -42,7 +42,7 @@ Other names/variants:
 ## Computational Graphs
 Math expressions can be thought of as **computational graphs**. 
 
-Consider `e=(a+b)∗(b+1)`:
+Consider $e=(a+b)\times(b+1)$:
 - 3 operations: 2 `+` and 1 `×`
 - Intermediary variables: `c` & `d`
     + `c = a + b`
@@ -76,7 +76,8 @@ Here is the computational graph with the derivatives label on each edge:
 <en-media type="image/png" hash="2685be4fd083d82d5d364fd0d056858e"/>
 
 To evaluate derivatives, just multiply values of edges connecting nodes. 
-![formula](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20e%7D%7B%5Cpartial%20a%7D%20%3D%20%5Cfrac%7B%5Cpartial%20c%7D%7B%5Cpartial%20a%7D%20%5Ccdot%20%5Cfrac%7B%5Cpartial%20e%7D%7B%5Cpartial%20c%7D%20%3D%201%5Cast%202%3D2 "\\frac{\\partial e}{\\partial a} = \\frac{\\partial c}{\\partial a} \\cdot \\frac{\\partial e}{\\partial c} = 1\\ast 2=2")
+
+$$\frac{\partial e}{\partial a} = \frac{\partial c}{\partial a} \cdot \frac{\partial e}{\partial c} = 1 \times 2=2$$
 
 For indirectly connected nodes, **sum over all possible paths** (*multivariate chain rule*). For example:
 
@@ -87,7 +88,7 @@ For indirectly connected nodes, **sum over all possible paths** (*multivariate c
 Summing over all paths can easily lead to combinatorial explosion. 
 <en-media type="image/png" hash="8877dd1bd004654d949917b5bfda90df"/>
 
-In the above, there are 3 × 3 = 9 paths to sum over for derivative of Z wrt X. Paths grow exponential with complex graphs.
+In the above, there are $3 × 3 = 9$ paths to sum over for derivative of Z wrt X. Paths grow exponential with complex graphs.
 <en-media type="image/png" hash="e1784a5f7263bb740bf8bc30c155d869"/>
 
 
