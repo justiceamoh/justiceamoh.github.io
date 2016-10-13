@@ -9,7 +9,7 @@ permalink:           pretty
 # Setup
 title:            'Justice Amoh'
 tagline:          'PhD student at Thayer School Of Engineering'
-description:      'A researcher at the <a href="http://engineering.dartmouth.edu/analoglab/" target="_blank">Analog Lab</a> at Thayer. Research areas include Machine Learning, Acoustics, Biomedical Devices and Embedded Systems.'
+description:      'Musings on machine learning, acoustics and embedded systems.'
 url:              http://justiceamoh.github.io
 baseurl:          '/'
 paginate:         5
@@ -27,6 +27,7 @@ author:
   email:            justiceamoh@gmail.com
   github:           justiceamoh
   linkedin:         justiceamoh
+  google_plus:      +JusticeAmoh
   # orcid:            http://orcid.org/0000-0002-0359-2828
   google_scholar:   https://scholar.google.com/citations?user=0iKKMSIAAAAJ&hl=en 
   email_md5:        dd847f7045b8377a1d85b9a34ed383be

@@ -1,8 +1,14 @@
 ---
+layout: post
 title:  "Deep Neural Networks In Cough Detection"
 date:   2015-06-15 10:18:00
-description: A First-Pass Cough Detection Block
-published: false
+description: Using Deep Nets for Cough Detection
+tags: [dnn, cough]
+output:
+  html_document:
+    keep_md: true
+comments: true
+published: true
 ---
 
 # DNN - Application Notes
@@ -55,17 +61,17 @@ The first step for me was to extract spectral features from the audio examples. 
 
 I attempted to just concatenate the individual frames together into a long table where each example was a 1x129 vector (129 frequency bins from spectra). **Here the patterns I was hoping to observe were very prominent**. Although these patterns are not as pronounced for the advanced feautres such as PLP or Mfcc. See images below:
 
-![Image of Stft]({{ site.url }} assets/imgs/allexamples_spec.png "Spectrum")
-![Image of PLPSpeC]({{ site.url }} assets/imgs/allexamples_pspec.png "PLP Spectrum")
-![Image of PLPCeps]({{ site.url }} assets/imgs/allexamples_pceps.png "Cepstrum")
-![Image of MFCC]({{ site.url }} assets/imgs/allexamples_mfcc.png "MFCCs")
+![Image of Stft](/assets/imgs/allexamples_spec.png "Spectrum")
+![Image of PLPSpeC](/assets/imgs/allexamples_pspec.png "PLP Spectrum")
+![Image of PLPCeps](/assets/imgs/allexamples_pceps.png "Cepstrum")
+![Image of MFCC](/assets/imgs/allexamples_mfcc.png "MFCCs")
  
 
 >My only concern with this approach is that just by putting the examples(frames) together in their original order, I will have instances of abrupt transitions from one event to the other. I'm thinking though that this may not be as huge a problem for this application since in practice, cough events could occur in-succession.
 
 Next, I attempted to grab the features of equal sizes from all my data(cough and speech). I attempted to use 13x10(13 PLP cepstra, 10 frames) as my 'mini-batch'. Mini-batches at edges which were less than 10 frames were zero-padded. Also, I had a 2-sample overlap on each edge(left and right) of the frames, leaving 6 samples of true intrinsic value in each sample.
 
-![Image of Stacked Mini-Batches]({{ site.url }} assets/imgs/spectra_stacked_mini_batch.png "MiniBatches") 
+![Image of Stacked Mini-Batches](/assets/imgs/spectra_stacked_mini_batch.png "MiniBatches") 
 
 >If I use these exact mini-batches batches in my training, I avoid the abrupt transitions between examples that I mention above.
 
@@ -79,7 +85,7 @@ I trained a stacked denoising autoencoder on my ~300 cough dataset. The architec
 - hidden layer 2: 100
 - output layer  : 12
 First, the features learned in the first layer didn't look very interesting. 
-![SDA H1 Features]({{ site.url }} assets/imgs/da_cough_weights.png "sDA Features")
+![SDA H1 Features](/assets/imgs/da_cough_weights.png "sDA Features")
 
 I proceeded to encode my training data then just train a simple SVM on top of the second layer to see whether the encoding was looking good at all. To my surprise, it wasn't performing well at all. The classification performance looked like:
 - 61.9% sensitivity, 57.2% specificity for encoded 100 features.
@@ -165,7 +171,7 @@ Increasing the number of filters from 32 to 64 also gave some improvement in per
 
 ## Quick References
 ### Training Error vs Testing Error
-![Error Plots]({{ site.url }} assets/imgs/training_testing_error.png "Training vs testing Errors")
+![Error Plots](/assets/imgs/training_testing_error.png "Training vs testing Errors")
 
 
 ### Theano Tweaks & Flags
