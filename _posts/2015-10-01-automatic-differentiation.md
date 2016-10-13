@@ -1,7 +1,14 @@
 ---
-title:  "A Coarse Cough Detection"
+layout: post
+title:  "Automatic Differentiation"
+author: "Justice"
 date:   2015-01-04 10:18:00
-description: A First-Pass Cough Detection Block
+description: An Overview of Automatic Differentiation 
+tags: [dsp, classifiers, cough]
+output:
+  html_document:
+    keep_md: true
+comments: true
 published: true
 ---
 

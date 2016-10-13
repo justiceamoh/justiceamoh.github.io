@@ -1,27 +1,46 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge # changed from `pygments` as github says so
+markdown:            kramdown
+highlighter:         rouge
 
 # Permalinks
-permalink:        pretty
+permalink:           pretty
+
 
 # Setup
-title:               Justice Amoh
-tagline:             'PhD student at Thayer School Of Engineering'
-description:         'A researcher at the <a href="http://engineering.dartmouth.edu/analoglab/" target="_blank">Analog Lab</a> at Thayer. Research areas include Machine Learning, Acoustics, Biomedical Devices and Embedded Systems.'
-url:                 http://justiceamoh.github.io
-baseurl:             ''
-paginate:            5
+title:            'Justice Amoh'
+tagline:          'PhD student at Thayer School Of Engineering'
+description:      'A researcher at the <a href="http://engineering.dartmouth.edu/analoglab/" target="_blank">Analog Lab</a> at Thayer. Research areas include Machine Learning, Acoustics, Biomedical Devices and Embedded Systems.'
+url:              http://justiceamoh.github.io
+baseurl:          '/'
+paginate:         5
+
+# Pages
+pages:
+  Archive: '/archive'
+  About: '/about'
+  Tags: '/tags'
 
 # About/contact
 author:
-  name:              Justice Amoh
-  url:               https://twitter.com/mdo
-  email:             justiceamoh@gmail.com
+  name:             Justice Amoh
+  url:              https://twitter.com/mdo
+  email:            justiceamoh@gmail.com
+  github:           justiceamoh
+  linkedin:         justiceamoh
+  # orcid:            http://orcid.org/0000-0002-0359-2828
+  google_scholar:   https://scholar.google.com/citations?user=0iKKMSIAAAAJ&hl=en 
+  email_md5:        dd847f7045b8377a1d85b9a34ed383be
 
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Theme
+theme:
+
+ 
 # Custom vars
-version:             1.0.0
+version:             1.0.5
 
 # Gems
 gems: [jekyll-paginate]
-paginate_path: "page:num"

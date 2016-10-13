@@ -1,7 +1,14 @@
 ---
+layout: post
 title:  "A Coarse Cough Detection"
+author: "Justice"
 date:   2015-01-04 10:18:00
 description: A First-Pass Cough Detection Block
+tags: [dsp, classifiers, cough]
+output:
+  html_document:
+    keep_md: true
+comments: true
 published: true
 ---
 
