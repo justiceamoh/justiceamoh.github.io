@@ -5,7 +5,18 @@ title: About
 
 Hey there! 
 
-I am Justice Amoh, a PhD candidate of the [Thayer School](http://thayer.dartmouth.edu/) at [Dartmouth College](http://dartmouth.edu/). I am a member of the [Thayer Analog Lab](http://engineering.dartmouth.edu/analoglab/) and my research interests are Machine Learning, Biomedical Devices and Acoustic Signal Processing. 
+I am Justice Amoh, a PhD student at the [Thayer School of Engineering](http://thayer.dartmouth.edu/), [Dartmouth College](http://dartmouth.edu/). I am a member of the [Thayer Analog Lab](http://engineering.dartmouth.edu/analoglab/) and my research interests are Machine Learning, Biomedical Devices and Acoustic Signal Processing. 
+In this blog, I will be exploring topics that I find essential in the course of my research. 
+
+<!-- resurging in the course of my research. 
+
+found essential in the conglomerate of all my research interests. I plan to use each s
+
+I have found essential in my research
+
+resourceful in my research.  
+
+discussing details  -->
 
 ### Projects
 Acoustic Health Sensors: Circuitry and machine learning algorithms for analyzing respiratory acoustics for detection and characterization of Asthma or COPD symptoms. 

@@ -7,9 +7,9 @@ permalink:           pretty
 
 
 # Setup
-title:            'Justice Amoh'
-tagline:          'PhD student at Thayer School Of Engineering'
-description:      'Musings on machine learning, acoustics and embedded systems.'
+title:            'Amoh's Blog'
+tagline:          'A trek from circuits to code'
+description:      'An engineer's musings on machine learning, acoustic signal processing and instrumentation.'
 url:              http://justiceamoh.github.io
 baseurl:          '/'
 paginate:         5
@@ -23,7 +23,7 @@ pages:
 # About/contact
 author:
   name:             Justice Amoh
-  url:              https://twitter.com/mdo
+  url:              http://justiceamoh.github.io
   email:            justiceamoh@gmail.com
   github:           justiceamoh
   linkedin:         justiceamoh
