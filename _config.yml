@@ -1,47 +1,25 @@
-# Dependencies
-markdown:            kramdown
-highlighter:         rouge
-
 # Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-
+# relative_permalinks: true
 
 # Setup
-title:            'Doscendo Discimus'
-tagline:          'A trek from circuits to code'
-description:      'A research blog on electronics, machine learning and signal processing.'
-url:              http://justiceamoh.github.io
-baseurl:          '/'
-paginate:         5
-
-# Pages
-pages:
-  Archive: '/archive'
-  About: '/about'
-  Tags: '/tags'
+title:               Lanyon
+tagline:             'A Jekyll theme'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
 
 # About/contact
 author:
-  name:             Justice Amoh
-  url:              http://justiceamoh.github.io
-  email:            justiceamoh@gmail.com
-  github:           justiceamoh
-  linkedin:         justiceamoh
-  google_plus:      +JusticeAmoh
-  # orcid:            http://orcid.org/0000-0002-0359-2828
-  google_scholar:   https://scholar.google.com/citations?user=0iKKMSIAAAAJ&hl=en 
-  email_md5:        dd847f7045b8377a1d85b9a34ed383be
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# Theme
-theme:
-
- 
 # Custom vars
-version:             1.0.5
+version:             1.0.0
 
-# Gems/Plugins
+# Gems
 plugins: [jekyll-paginate]
