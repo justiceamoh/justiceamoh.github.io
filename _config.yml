@@ -43,5 +43,5 @@ theme:
 # Custom vars
 version:             1.0.5
 
-# Gems
-gems: [jekyll-paginate]
+# Gems/Plugins
+plugins: [jekyll-paginate]
