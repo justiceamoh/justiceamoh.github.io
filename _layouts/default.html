@@ -2,8 +2,9 @@
 <html lang="en-us">
 
   {% include head.html %}
+  <!-- {% include google_analytics.html %} -->
 
-  <body>
+  <body class="theme-base-0d">
 
     {% include sidebar.html %}
 
@@ -13,7 +14,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a href="/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
@@ -43,5 +44,25 @@
         }, false);
       })(document);
     </script>
+
+    <!-- Load MathJax and it's configurations -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>   
+    
+
   </body>
 </html>
