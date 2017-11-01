@@ -14,11 +14,11 @@ url:              http://justiceamoh.github.io
 baseurl:          '/'
 paginate:         5
 
-# # Pages
-# pages:
-#   Archive: '/archive'
-#   About:   '/about'
-#   Tags:    '/tags'
+# Pages
+pages:
+  Archive: '/archive'
+  About: '/about'
+  Tags: '/tags'
 
 # About/contact
 author:
@@ -43,5 +43,5 @@ theme:
 # Custom vars
 version:             1.0.5
 
-# Gems/Plugins
-plugins: [jekyll-paginate]
+# Gems
+gems: [jekyll-paginate]
