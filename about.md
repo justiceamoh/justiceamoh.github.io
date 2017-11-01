@@ -5,13 +5,13 @@ title: About
 
 Hey there! 
 
-I am Justice Amoh and you have found my research blog. I am a PhD student at the [Thayer School of Engineering](http://thayer.dartmouth.edu/), [Dartmouth College](http://dartmouth.edu/) and a member of the [Analog Lab](http://engineering.dartmouth.edu/analoglab/). My research interests are Machine Learning, Biomedical Devices and Acoustic Signal Processing. In this blog, I aim to explore topics in electronics and machine learning that I have proven essential in my research. My motivation for this blog is embodied in the latin phrase:
+I am Justice Amoh and you have found my research blog. I am a PhD candidate at the [Thayer School of Engineering](http://thayer.dartmouth.edu/), [Dartmouth College](http://dartmouth.edu/) and a member of the [Analog Lab](http://engineering.dartmouth.edu/analoglab/). My research interests are Machine Learning, Biomedical Devices and Acoustic Signal Processing. In this blog, I aim to explore topics in electronics and machine learning that have proven essential in my research. My motivation for this blog is embodied in the latin phrase:
 
 > **Doscendo discimus**: *"by teaching, we learn"*.
 
-It is my hope that by attempting to explore these subjects in a more simple and practical approach, I will provide a useful resource for beginners and at the same time gain a firmer grip on the material myself. Since I will be including code for everything I discuss on here, I also hope this blog will serve as a quick 'how-to' reference for myself or others in the future.
+It is my hope that by attempting to explore these subjects in a more simple and practical approach, I will provide a useful resource for beginners and, at the same time, gain a firmer grip on the material myself. Since I will be including code for everything I discuss on here, I also hope this blog will serve as a quick 'how-to' reference for myself or others in the future.
 
-For more information about me and my work, visit my [Github](https://github.com/justiceamoh) or [ResearchGate](https://www.researchgate.net/profile/Justice_Amoh) profiles. I have worked on a wide variety of projects from instrumentation, through to smartphone apps. A few of these projects are:
+For more information about me and my work, visit my [Github](https://github.com/justiceamoh) or [ResearchGate](https://www.researchgate.net/profile/Justice_Amoh) profiles. I have worked on a wide variety of projects covering instrumentation, deep learning and smartphone apps. A few of these projects are:
 
 - **DeepCough:** Deep neural networks for detecting cough sounds from a chest worn acoustic sensor 
 

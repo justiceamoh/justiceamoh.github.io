@@ -11,14 +11,14 @@ title:            'Doscendo Discimus'
 tagline:          'A trek from circuits to code'
 description:      'A research blog on electronics, machine learning and signal processing.'
 url:              http://justiceamoh.github.io
-baseurl:          '/'
+baseurl:          ''
 paginate:         5
 
-# Pages
-pages:
-  Archive: '/archive'
-  About: '/about'
-  Tags: '/tags'
+# # Pages
+# pages:
+#   Archive: '/archive'
+#   About:   '/about'
+#   Tags:    '/tags'
 
 # About/contact
 author:
@@ -43,5 +43,5 @@ theme:
 # Custom vars
 version:             1.0.5
 
-# Gems
-gems: [jekyll-paginate]
+# Gems/Plugins
+plugins: [jekyll-paginate]
