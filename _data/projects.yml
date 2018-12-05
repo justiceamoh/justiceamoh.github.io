@@ -1,0 +1,23 @@
+- intro:
+  description: "Find below some projects I have worked on in the past and their descriptions. Feel free to contact me for more information on any of these."
+
+- project:
+  title: DeepCough 
+  link: "#hook"
+  tagline: "Deep neural network architectures for detecting cough sounds from a chest worn acoustic sensor."
+- project:
+  title: Acoustic Health Sensors
+  link: "#"
+  tagline: "Circuitry and machine learning algorithms for analyzing respiratory acoustics for detection and characterization of Asthma or COPD symptoms."
+- project:
+  title: Portable BioImpedance Device
+  link: "#"
+  tagline: "An embedded system extending a single chip biopolar impedance analyzer IC to a tetrapolar device for applications in analyzing cancerous tissues during prostate biopsies."
+- project:
+  title: MHB App
+  link: "#"
+  tagline: "Methodist Hymn Book Android app for the Methodist Church, Ghana. An collation and indexing of all hymns, creeds, and service routines as available in the physical methodist hymn book used in all methodist churches in Ghana."
+- project:
+  title: Timely App
+  link: "#"
+  tagline: "An android app for Dartmouth students that anticipates what information user's need at any particular point in time, and delivers it to them in a Google-Now-cards kinda approach. Information includes current meal options at dining halls, events in buildings user might be in close proximity with, and so on."

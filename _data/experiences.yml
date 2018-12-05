@@ -1,0 +1,48 @@
+- experience:
+  role: Research Scientist Intern
+  time: Summer 2017
+  company: Amazon Inc., Alexa Machine Learning, Cambridge, MA
+  details: "Performed speech recognition research at Amazon for the Alexa conversational AI
+  system and platform. Work included various machine learning tasks pertaining to Acoustic 
+  Event Detection (AED), Voice Activity Detection (VAD) and Natural Language Understanding (NLU)."
+- experience:
+  role: Postbac Research Assistant
+  time: 2013 - 2014
+  company: Analog Electronics Lab, Thayer School, NH
+  details: "Investigated the feasibility of a piezoelectric-based sensor as wearable 
+  device for monitoring asthma symptoms under Dr. Kofi Odame’s supervision. I designed and 
+  implemented the piezo-sensor electronics. I explored features of interest in the sensor 
+  output and put together signal processing methods to extract the said features. Finally, 
+  I explored different machine learning algorithms to automatically detect coughs in the 
+  sensor output stream. In this project, I garnered skills in machine learning algorithms, 
+  acoustic signal processing and printed circuit board design."
+- experience:
+  role: Postbac Research Assistant
+  time: 2013 - 2014
+  company: Clinical Applications of Bioimpedance Lab, Thayer School, NH
+  details: "Performed research with Dr. Ryan Halter on a small form-factor bioimpedance
+  system. I devised a portable tetra-polar impedance analysis system to meet higher 
+  efficiency and safety specifications. This involved developing an analog front-end 
+  circuit to adapt a stock impedance analyzer chip to meet the higher requirements. 
+  In this project, I gained experience in circuit design and implementation for clinical 
+  electronic instruments."
+- experience:
+  role: Undergraduate Research Intern
+  time: Summer 2012
+  company: Molecular Imaging Instrumentation Lab, Stanford University, CA
+  details: "Conducted research in the MII lab of Dr. Craig Levin, in Stanford University’s 
+  Radiology Department. We designed a Cadmium Zinc Telluride (CZT) based PET system for 
+  imaging small animals. Specifically, I calibrated the detector unit to yield energy 
+  spectra of event pulses in units of kev versus event counts. I also devised a system to 
+  automatically determine a threshold for noise and trigger the detector on that threshold. 
+  From this experience, I acquired skills in digital signal processing and object oriented 
+  programming in C++."
+- experience:
+  role: Undergraduate Research Assistant
+  time: 2011 - 2013
+  company: Computational Plasma Physics Lab, Dartmouth College, NH
+  details: "Conducted research with Dr. Richard Denton in investigating the dependence of 
+  bulk plasma composition at geosynchronous orbit on solar cycle phases. Using MATLAB, we 
+  investigated and modeled the changes in particle density of bulk ions with respect to 
+  solar cycles, magnetic local time, and seasons. I acquired computational and analytical 
+  techniques required to efficiently manage and process enormous data."

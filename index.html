@@ -1,49 +1,14 @@
 ---
 layout: default
-title: Home
-comments: True
 ---
 
-{% include comments_count.html %}
+            
+{% include career-profile.html %}
+            
+{% include experience.html %}
+            
+{% include projects.html %}
+            
+{% include skills.html %}
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-      <div class="excerpt">
-        {{ post.excerpt }}
-        <a href="{{ post.url }}">{{ site.theme.str_continue_reading }}</a>
-        <span class="comments-count">
-          <a class="comments-count-icon"><i class="fa fa-comment"></i></a>
-          <a href="{{ post.url }}#disqus_thread"> Comments</a>
-        </span>
-      </div>
-  </div>
-  <hr></hr>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
 

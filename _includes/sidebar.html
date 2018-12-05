@@ -1,47 +1,57 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Use icons from fontawesome when you are adding new item in the contact list  -->
+<div class="sidebar-wrapper">
 
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
+   <div class="profile-container">
 
-<!--   <div class="sidebar-logo">
-    <img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=80"/>
-  </div> -->
+       <img class="profile-img" src="{{site.baseurl}}/assets/images/{{ site.pic }}" alt="profile picture" />
 
-  <div class="sidebar-item">
-    <p>{{ site.description }}</p>
-  </div>
+       {% if site.name %}
+       <h1 class="name">{{site.name}}</h1>
+       {% endif %}
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
+       {% if site.tagline %}
+       <h3 class="tagline">{{site.tagline}}</h3>
+       {% endif %}
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+   </div><!--//profile-container-->
 
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </nav>
+   <div class="contact-container container-block">
+       <ul class="list-unstyled contact-list">
 
-  <div class="sidebar-item">
-    <p class="social-icons">
-       <a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github fa-2x"></i></a>
-       <a href="{{ site.author.google_scholar }}"><i class="fa fa-graduation-cap fa-2x"></i></a>
-       <a href="https://plus.google.com/{{ site.author.google_plus }}"><i class="fa fa-google-plus fa-2x"></i></a>
-       <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin fa-2x"></i></a>
-       <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-2x"></i></a>
-       <a href="/atom.xml"><i class="fa fa-rss fa-2x"></i></a>
-       </p>
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
-  </div>
-</div>
+          {% if site.email %}
+           <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+           {% endif %}
+
+           {% if site.phone %}
+           <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+           {% endif %}
+
+           {% if site.website %}
+           <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+           {% endif %}
+
+           {% if site.linkedin %}
+           <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/{{site.linkedin}}" target="_blank">{{site.linkedin}}</a></li>
+           {% endif %}
+
+           {% if site.gscholar %}
+           <li class="gscholar"><i class="fa fa-graduation-cap"></i><a href="{{site.gscholar}}">publications</a></li>
+           {% endif %}
+
+           {% if site.github %}
+           <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">{{site.github}}</a></li>
+           {% endif %}
+
+           {% if site.twitter %}
+           <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+           {% endif %}
+
+       </ul>
+   </div><!--//contact-container-->
+
+  {% include education.html %}
+  {% include language.html %}
+  {% include interests.html %}
+  <!-- {% include about.html %} -->
+
+</div><!--//sidebar-wrapper-->
