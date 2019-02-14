@@ -14,9 +14,8 @@ baseurl: '/cv' #change it according to your repository name
 name: Justice Amoh
 tagline: Machine Learning Researcher 
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-summary: 'I am a Ph.D. candidate at the Thayer School of Engineering, Dartmouth College. My research interests are electronics and machine learning and I focus
-on using learning algorithms and signal processing tools to implement and investigate wearable
-health monitoring devices for patients with lung and airway diseases.'
+summary: 'I am a Ph.D. candidate at the Thayer School of Engineering, Dartmouth College. My research interests are electronics and machine learning with a focus
+on using learning algorithms and signal processing tools to implement and investigate wearable health monitoring devices for patients with lung and airway diseases.'
 
 #sidebar links
 email: justiceamoh@gmail.com
